@@ -14,22 +14,17 @@ body {
 
 .steps {
   width: 80%;
-  /* Make the container width 80% of the available space */
   max-width: 600px;
-  /* Limit the maximum width to 600px */
   background-color: #f7f7f7;
   border-radius: 7px;
   padding: 25px;
-  /* Increase the padding for more space */
   margin: 40px auto;
-  /* Adjust margin for better centering */
 }
 
 .numbers {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  /* Add space between numbers and message */
 }
 
 .numbers>div {
@@ -52,7 +47,6 @@ body {
   text-align: center;
   font-size: 20px;
   margin: 20px 0;
-  /* Increase margin for more space */
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -105,14 +99,11 @@ h3 {
 @media (max-width: 600px) {
   .steps {
     width: 100%;
-    /* Adjust container width for smaller screens */
     padding: 40px;
-    /* Reduce padding for smaller screens */
   }
 
   .numbers>div {
     height: 30px;
-    /* Adjust number size for smaller screens */
     aspect-ratio: 1;
     font-size: 14px;
   }
