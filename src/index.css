@@ -1,4 +1,4 @@
-/* Original CSS for Desktop */
+/* Original CSS for Desktop (Unchanged) */
 * {
   box-sizing: border-box;
 }
@@ -93,47 +93,33 @@ h3 {
 @media (max-width: 600px) {
   .steps {
     width: 100%;
-    /* Use 100% width for mobile devices */
     padding: 15px;
-    /* Reduce padding for mobile */
-    margin: 20px auto;
+    margin: 60px auto 20px auto;
     /* Adjust margin for mobile */
   }
 
   .numbers>div {
     height: 30px;
-    /* Reduce height for mobile */
     aspect-ratio: 1;
     font-size: 14px;
-    /* Reduce font size for mobile */
   }
 
   .message {
     font-size: 16px;
-    /* Reduce font size for mobile */
     margin: 20px 0;
   }
 
   .buttons {
     display: flex;
-    flex-direction: column;
-    /* Stack buttons vertically for mobile */
-    gap: 10px;
-    /* Add some spacing between buttons for mobile */
-  }
-
-  .buttons button {
-    font-size: 14px;
-    /* Reduce font size for mobile */
+    justify-content: space-between;
+    /* Reset to default button alignment */
   }
 
   .close {
-    top: 16px;
-    right: 16px;
-    border: none;
-    background: none;
-    cursor: pointer;
+    top: 10px;
+    /* Adjust top position for mobile */
+    right: 10px;
+    /* Adjust right position for mobile */
     font-size: 24px;
-    /* Increase font size for mobile */
   }
 }
