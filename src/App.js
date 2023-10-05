@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./index.css";
+import { Button } from "./components/Button";
+
 const messages = [
   "Learn Advance React ⚛️",
   "App in Software House 💼",
   "Earn & Invest it 🤑",
 ];
 
-function App() {
+export default function App() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
 
@@ -37,23 +39,23 @@ function App() {
             {step}: {messages[step - 1]}{" "}
           </p>
           <div className="buttons">
-            <button
-              style={{ backgroundColor: "#4df", color: "#fff" }}
+            <Button
+              textColor="#fff"
+              backgroundColor="#4df"
               onClick={handlePrevious}
             >
               Previous
-            </button>
-            <button
-              style={{ backgroundColor: "#4df", color: "#fff" }}
+            </Button>
+            <Button
+              textColor="#fff"
+              backgroundColor="#4df"
               onClick={handleNext}
             >
               Next
-            </button>
+            </Button>
           </div>
         </div>
       )}
     </>
   );
 }
-
-export default App;
